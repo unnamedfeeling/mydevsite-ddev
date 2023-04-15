@@ -1,3 +1,6 @@
 [submodule "src"]
 	path = src
 	url = git@github.com:unnamedfeeling/mydevsite.git
+[submodule "mysite-theme"]
+	path = modules/themes/mysite-theme
+	url = git@github.com:unnamedfeeling/mydevsite-theme.git
