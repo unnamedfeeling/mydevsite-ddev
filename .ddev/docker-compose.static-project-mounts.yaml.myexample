@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  web:
+    volumes:
+      - bind:
+          create_host_path: true
+        read_only: false
+        source: "static/mydevsite/uploads"
+        target: /var/www/html/project/src/web/app/uploads
+        type: bind
+      - bind:
+          create_host_path: true
+        read_only: false
+        source: "static/mydevsite/cache"
+        target: /var/www/html/project/src/web/app/cache
+        type: bind

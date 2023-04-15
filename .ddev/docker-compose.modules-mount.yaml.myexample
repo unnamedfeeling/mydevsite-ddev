@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  web:
+    volumes:
+      - bind:
+            create_host_path: true
+        read_only: false
+        source: ../modules/themes/mysite-theme
+        target: /var/www/html/src/web/app/themes/mysite-theme
+        type: bind
